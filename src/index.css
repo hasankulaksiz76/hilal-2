@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-rounded: "Comfortaa", cursive;
+  
+  --color-strawberry: #FF2E63;
+  --color-chocolate: #3E2723;
+  --color-milk: #F5F5F5;
+  --color-cream: #FFF9E6;
+  --color-mint: #98FF98;
+  --color-lime: #32CD32;
+  --color-berry: #8A2BE2;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-chocolate font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-rounded font-bold;
+  }
+}
+
+.pop-art-shadow {
+  box-shadow: 8px 8px 0px 0px rgba(62, 39, 35, 1);
+}
+
+.pop-art-shadow-sm {
+  box-shadow: 4px 4px 0px 0px rgba(62, 39, 35, 1);
+}
+
+.pop-art-border {
+  border: 3px solid #3E2723;
+}
